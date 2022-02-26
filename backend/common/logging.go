@@ -12,6 +12,10 @@ func LogFatal(tag string, message string) {
 	os.Exit(1)
 }
 
+func LogError(tag string, message string) {
+	color.Red(fmt.Sprintf("[%s] : %s", tag, message))
+}
+
 func LogPrintln(tag string, message string) {
 	log.Println(fmt.Sprintf("[%s] : %s", tag, message))
 }
