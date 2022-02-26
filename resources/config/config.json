@@ -1,0 +1,8 @@
+{
+  "HttpServingPort": 3000,
+  "JWTAppKey": "4wt62hd-2d@!3ns/sw.",
+  "DB": {
+    "Dsn": "host=localhost user=postgres password=test dbname=notans port=5432 sslmode=disable TimeZone=Asia/Jakarta",
+    "Driver": "postgres"
+  }
+}

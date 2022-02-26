@@ -1,0 +1,18 @@
+{
+  "lang-id": "id-ID",
+  "description": "Language data for id-ID",
+  "data": [
+    {
+      "key": "SUCCESS_FETCHED",
+      "value": "Data berhasil diambil!"
+    },
+    {
+      "key": "ERROR_SEND_MAIL",
+      "value": "Can't send mail"
+    },
+    {
+      "key": "SUCCESS_SEND_MAIL",
+      "value": "Email has been sent!"
+    }
+  ]
+}

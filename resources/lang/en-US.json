@@ -1,0 +1,42 @@
+{
+  "lang-id": "en-US",
+  "description": "Language data for en-US",
+  "data": [
+    {
+      "key": "SUCCESS_FETCHED",
+      "value": "Data Successfully Fetched!"
+    },
+    {
+      "key": "SUCCESS_DELETED",
+      "value": "Data Successfully Deleted!"
+    },
+    {
+      "key": "ERROR_SEND_MAIL",
+      "value": "Can't send mail"
+    },
+    {
+      "key": "SUCCESS_SEND_MAIL",
+      "value": "Email has been sent!"
+    },
+    {
+      "key": "NOT_FOUND",
+      "value": "Data not found!"
+    },
+    {
+      "key": "ERROR_OCCURRED",
+      "value": "Error occurred!"
+    },
+    {
+      "key": "USER_EXIST",
+      "value": "Specified user is exist!"
+    },
+    {
+      "key": "UNAUTHORIZED",
+      "value": "Unauthorized!"
+    },
+    {
+      "key": "USERNAME_PASSWORD_INVALID",
+      "value": "Username or password invalid!"
+    }
+  ]
+}
