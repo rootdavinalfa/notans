@@ -7,9 +7,10 @@ import (
 )
 
 type Config struct {
-	DB     *DBConfig `json:"DB"`
-	Port   int       `json:"HttpServingPort"`
-	AppKey string    `json:"JWTAppKey"`
+	DB              *DBConfig `json:"DB"`
+	Port            int       `json:"HttpServingPort"`
+	AppKey          string    `json:"JWTAppKey"`
+	JwtExpireInHour string
 }
 
 type DBConfig struct {
