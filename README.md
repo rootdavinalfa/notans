@@ -6,7 +6,7 @@ Link shortener written in Go. [**Experimental**]
 ## Build
 You can build this project using make,this can be done with
 
-    make -C build
+    make build
  
 After that, kindly check dist folder and run the executable from that folder.
   
