@@ -1,3 +1,12 @@
+/*
+ * Copyright (c) 2022.
+ *
+ * Davin Alfarizky Putra Basudewa <dbasudewa@gmail.com>
+ * All rights reserved
+ *
+ * This program contains research , trial - errors. So this program can't guarantee your system will work as intended.
+ */
+
 package service
 
 import (
@@ -26,4 +35,8 @@ func dbMigrate() {
 		common.LogPrintln("SERVICE::DBMIGRATE:USER", err.Error())
 	}
 
+	err = db.AutoMigrate(&Link{})
+	if err != nil {
+		common.LogPrintln("SERVICE::DBMIGRATE:LINK", err.Error())
+	}
 }

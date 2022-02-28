@@ -1,3 +1,12 @@
+/*
+ * Copyright (c) 2022.
+ *
+ * Davin Alfarizky Putra Basudewa <dbasudewa@gmail.com>
+ * All rights reserved
+ *
+ * This program contains research , trial - errors. So this program can't guarantee your system will work as intended.
+ */
+
 package routes
 
 import (
@@ -15,6 +24,7 @@ type IRoutes struct {
 
 func (rtr *IRoutes) Bind(router *gin.Engine) {
 	router.POST("/auth/signin", service2.SignIn())
+	router.GET("/slink/:slinkParam", service2.RedirectLink())
 
 	service := router.Group("/service")
 	middle := middleware.Middleware{
@@ -25,4 +35,5 @@ func (rtr *IRoutes) Bind(router *gin.Engine) {
 	service.Use(middle.AuthMiddle())
 
 	UserRoute(service)
+	LinkRoute(service)
 }

@@ -1,3 +1,12 @@
+/*
+ * Copyright (c) 2022.
+ *
+ * Davin Alfarizky Putra Basudewa <dbasudewa@gmail.com>
+ * All rights reserved
+ *
+ * This program contains research , trial - errors. So this program can't guarantee your system will work as intended.
+ */
+
 package service
 
 import (
@@ -61,7 +70,7 @@ func NewUser() gin.HandlerFunc {
 		user.Password = string(password)
 
 		tx := db.Create(&user)
-		if tx != nil {
+		if tx.Error != nil {
 			common.RespondJSON(context, http.StatusBadRequest, nil, "USER_EXIST")
 			return
 		}

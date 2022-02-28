@@ -1,3 +1,12 @@
+/*
+ * Copyright (c) 2022.
+ *
+ * Davin Alfarizky Putra Basudewa <dbasudewa@gmail.com>
+ * All rights reserved
+ *
+ * This program contains research , trial - errors. So this program can't guarantee your system will work as intended.
+ */
+
 package config
 
 import (
@@ -10,7 +19,7 @@ type Config struct {
 	DB              *DBConfig `json:"DB"`
 	Port            int       `json:"HttpServingPort"`
 	AppKey          string    `json:"JWTAppKey"`
-	JwtExpireInHour string
+	JwtExpireInHour int
 }
 
 type DBConfig struct {

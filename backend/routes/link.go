@@ -15,9 +15,10 @@ import (
 	"notans/backend/service"
 )
 
-func UserRoute(route *gin.RouterGroup) {
-	common.Get(route, "/user/list", service.GetAllUser())
-	common.Get(route, "/user/get/:id", service.GetUser())
-	common.Post(route, "/user", service.NewUser())
-	common.Delete(route, "/user/:id", service.DeleteUser())
+func LinkRoute(route *gin.RouterGroup) {
+	common.Get(route, "/link/list", service.GetLinks())
+	common.Get(route, "/link/get/:id", service.GetLink())
+	common.Get(route, "/link/s-get/:slinkParam", service.GetLink())
+	common.Post(route, "/link", service.CreateNewLink())
+	common.Delete(route, "/link/:id", service.DeleteLink())
 }

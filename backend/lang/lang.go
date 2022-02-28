@@ -65,5 +65,5 @@ func GetLangValue(param LangParams) string {
 			return value.Value
 		}
 	}
-	return "n/a"
+	return param.Key
 }

@@ -1,3 +1,12 @@
+/*
+ * Copyright (c) 2022.
+ *
+ * Davin Alfarizky Putra Basudewa <dbasudewa@gmail.com>
+ * All rights reserved
+ *
+ * This program contains research , trial - errors. So this program can't guarantee your system will work as intended.
+ */
+
 package middleware
 
 import (
@@ -35,6 +44,7 @@ func (middle *Middleware) AuthMiddle() gin.HandlerFunc {
 			c.AbortWithStatus(http.StatusUnauthorized)
 			return
 		}
+		c.Set("user", user)
 		c.Next()
 	}
 }
